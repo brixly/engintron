@@ -9,7 +9,7 @@
 #  * @license    GNU/GPL license: https://www.gnu.org/copyleft/gpl.html
 #  */
 
-INTERVAL="15" # Interval in seconds, must not exceed 60 (seconds)
+INTERVAL="30" # Interval in seconds, must not exceed 60 (seconds)
 COUNTER="0"
 
 function generate_https_vhosts {
