@@ -353,7 +353,7 @@ EOFS
 
     # Adjust log rotation to 7 days
     if [ -f /etc/logrotate.d/nginx ]; then
-        sed -i 's:rotate .*:rotate 7:' /etc/logrotate.d/nginx 
+        sed -i 's:rotate .*:rotate 7:' /etc/logrotate.d/nginx
     fi
 
     echo ""
@@ -890,7 +890,7 @@ purgecache)
     fi
     if [ "$(pstree | grep 'nginx')" ]; then
         echo "Restarting Nginx..."
-        service nginx restart
+        service nginx reload
         echo ""
     fi
     echo ""
